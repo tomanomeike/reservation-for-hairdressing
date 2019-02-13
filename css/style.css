@@ -1,0 +1,15 @@
+body, html {
+    background-image: url("https://mdbootstrap.com/img/Photos/Horizontal/Nature/full page/img(20).jpg");
+}
+.container {
+    display: inline-flex;
+    justify-content: space-around;
+}
+
+.navbar{
+    background-color: #FFAEC1;
+}
+.btn{
+    background-color: #FF6F91;
+    color: white;
+}

@@ -14,7 +14,7 @@
     <!-- Image and text -->
     <nav class="navbar">
         <a class="navbar-brand" href="#">
-            <img src="C:\xampp\htdocs\www\nfq\img" width="30" height="30">
+            <img src="http://localhost/nfq/reservation-for-hairdressing/img/logo1.png" width="50" height="50">
         </a>
 
     </nav>

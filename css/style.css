@@ -1,0 +1,35 @@
+body, html {
+    background-image: url("../img/girl_with_flower.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar{
+    background-color: #FFAEC1;
+}
+li{
+    float: right;
+}
+.btn{
+    background-color: #FF6F91;
+    color: white;
+}
+.card{
+    width: 18rem;
+    margin-top: 40px;
+}
+.done{
+    color: 	#FF2F60;
+    text-align: center;
+    margin-top: 12rem;
+}
+footer{
+    background-image: radial-gradient(circle, #ffaec1, #ffbecd, #ffced9, #ffdde5, #ffedf1);
+    width:100%;
+    position: absolute;
+    bottom: 0px;
+}

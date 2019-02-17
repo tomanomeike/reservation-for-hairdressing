@@ -599,7 +599,7 @@ var datetimepickerFactory = function ($) {
 		hours12: false,
 		next: 'xdsoft_next',
 		prev : 'xdsoft_prev',
-		dayOfWeekStart: 0,
+		dayOfWeekStart: 1,
 		parentID: 'body',
 		timeHeightInTimePicker: 25,
 		timepickerScrollbar: true,

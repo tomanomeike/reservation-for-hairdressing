@@ -18,8 +18,9 @@
         <a class="navbar-brand" href="#">
             <img src="img/logo1.png" width="50" height="50">
         </a>
-        <li class="fa">&#xf095; +370000000 </li>
-        <li class="fa"> &#9993; info@youremail.com</li>
-
+        <a href = "#">Apie mus</a>
+        <a href = "#">Kontaktai</a>
+        <a></a>
+        <a></a>
     </nav>
 </header>

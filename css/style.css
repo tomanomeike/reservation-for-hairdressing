@@ -11,8 +11,12 @@ body, html {
 .navbar{
     background-color: #FFAEC1;
 }
-li{
-    float: right;
+.navbar a{
+    color: white;
+    text-decoration: none;
+}
+.navbar a:hover{
+    color:#a45367;
 }
 .btn{
     background-color: #FF6F91;
@@ -27,9 +31,38 @@ li{
     text-align: center;
     margin-top: 12rem;
 }
+h5 {
+    color: #FF2F60;
+}
+.form-control{
+    width: 20rem;
+    border-color: #bbbbbb;
+    margin: 10px 10px 10px 0px ;
+}
+.calendar{
+    margin: 2rem;
+}
+.btn.btn-lg:hover{
+    color:#a45367;
+}
 footer{
     background-image: radial-gradient(circle, #ffaec1, #ffbecd, #ffced9, #ffdde5, #ffedf1);
     width:100%;
-    position: absolute;
+    position: fixed;
     bottom: 0px;
 }
+#idelement{
+    color: black;
+}
+.table{
+    color: #FF2F60;
+    width: 46%;
+    margin-top: 20px;
+}
+
+.inputForm{
+    color: black;
+}
+
+
+

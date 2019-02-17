@@ -5,20 +5,23 @@
     });
 } )( jQuery );
 
+$.datetimepicker.setLocale('lt');
+
 function creatDatePickers(times){
     $('#datetime').datetimepicker({
         inline:true,
         minDate: new Date(),
-        allowTimes:times,
-        timepicker: times === undefined ? false : true
+        allowTimes:[
+        '10:00', '13:00', '15:00',
+        '17:00', '17:15', '17:30', '19:00', '20:00'
+    ],
+        // timepicker: times === undefined ? false : true
     });
 }
 
 //dummy function that simulates backend
 function getAvailableTimes(date){
     var data = {
-        "2019/02/20" : ["10:00", "10:30", "11:30", "13:00"],
-        "2019/02/27": ["11:15", "12:30", "16:45"]
     };
     return data [date];
 }
@@ -28,7 +31,37 @@ function changeDate(date) {
     date = date.substring(0, date.indexOf(" "));
     var availableTimes = getAvailableTimes(date);
     if (availableTimes === undefined){
-        $('#idelement').html('nerasta laiku')
+        $('#idelement').html('Nėra laisvų laikų. Prašome pasirinkti kitą dieną')
     }
+
     creatDatePickers(availableTimes);
+}
+function addRow() {
+    var time = document.getElementById("datetime")
+    var name = document.getElementById("name");
+    var phone = document.getElementById("phone");
+    var table = document.getElementById("myTableData");
+
+    var rowCount = table.rows.length;
+    var row = table.insertRow(rowCount);
+
+    row.insertCell(0).innerHTML= time.value;
+    row.insertCell(1).innerHTML= name.value;
+    row.insertCell(2).innerHTML= phone.value;
+    row.insertCell(3).innerHTML= '<input class = "btn" id = "save" type="button" value = "Trinti" onClick="Javacsript:deleteRow(this)">';
+}
+
+function deleteRow(obj) {
+
+    var index = obj.parentNode.parentNode.rowIndex;
+    var table = document.getElementById("myTableData");
+    table.deleteRow(index);
+
+}
+
+
+function load() {
+
+    console.log("Page load finished");
+
 }

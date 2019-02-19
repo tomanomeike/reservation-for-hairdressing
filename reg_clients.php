@@ -6,7 +6,7 @@
     <input class="form-control" type="text" placeholder="Vardas" required />
     <h5>Įveskite telefono numerį</h5>
     <input class="form-control" type="text" placeholder="Telefonas" required />
-    <a href="\reservation-for-hairdressing\successful_registration.php" class="btn ">Registruotis</a>
+    <a href="successful_registration.php" class="btn ">Registruotis</a>
     <div id = "idelement"></div>
 </div>
 

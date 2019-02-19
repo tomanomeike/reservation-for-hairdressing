@@ -20,16 +20,19 @@
     <table class = "table">
         <tr>
             <td>Vardas</td>
-            <td><input type="text" id="name" placeholder="Vardas" required method = POST/></td>
+            <td>
+                <form  id="form" action="#"">
+                    <input type="text" id="name" placeholder="Vardas">
+                </form>
+            </td>
         </tr>
         <tr>
             <td>Telefono numeris</td>
-            <td><input type="text" id="phone" placeholder="Telefonas" required method = POST/></td>
-
+            <td><input type="text" id="phone" placeholder="Telefonas"></td>
         </tr>
         <tr>
             <td></td>
-            <td><input class = "btn" type="button" id="add"  value="Registruoti" onclick="Javascript:addRow()" method = POST></td>
+            <td><input class = "btn" type="button" id="add"  value="Registruoti" onclick="Javascript:addRow() "></td>
         </tr>
     </table>
 </div>
